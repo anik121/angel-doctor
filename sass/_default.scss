@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*
+    ===========================
+    All Variables
+*/
+$mainColor: #5EA2CE;
+$black: #333333;
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FBFDFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.none_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.default_txt_color{
+    color: $mainColor;
+}
+
+
+/*
+    ========================
+    All Mixin
+*/
+@mixin fastTransition {
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FBFDFF;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $mainColor;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($mainColor,10); 
+  }
